@@ -1,0 +1,6 @@
+example:
+   maxuses: 0
+   delon: 0
+   perm: 0
+   cmds:
+      - say You redeemed the example code!

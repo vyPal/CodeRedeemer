@@ -1,0 +1,39 @@
+name: CodeRedeemer
+version: 1.0.1
+main: com.vypalstudios.CodeRedeemer.CodeRedeemer
+author: vyPal
+description: A simple configurable plugin to make codes that can be redeemed by users.
+
+commands:
+   coderedeemer:
+      description: CodeRedeemer main command
+      aliases:
+         - cdrdm
+         - cr
+   redeem:
+      description: CodeRedeemer command to redeem a code
+      aliases:
+         - rdm
+
+permissions:
+   coderedeemer.admin.*:
+      description: Give complete administrator access
+      children:
+         coderedeemer.admin.create: true
+         coderedeemer.admin.delete: true
+         coderedeemer.admin.setperm: true
+         coderedeemer.admin.addcmd: true
+         coderedeemer.admin.listcmd: true
+         coderedeemer.admin.rmcmd: true
+   coderedeemer.admin.create:
+      description: Give access to create codes
+   coderedeemer.admin.delete:
+      description: Give access to delete codes
+   coderedeemer.admin.setperm:
+      description: Give access to make code only for people with a permission (set null to erase)
+   coderedeemer.admin.addcmd:
+      description: Give access to add a command to a code
+   coderedeemer.admin.listcmd:
+      description: Give access to list all commands for this code
+   coderedeemer.admin.rmcmd:
+      description: Give access to remove a command from a code
